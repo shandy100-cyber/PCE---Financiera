@@ -6,36 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCE - Financiera | Asesoría Financiera y Servicios Bancarios</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="index-styles.css">
+
+    <style>
+        .material-symbols-outlined {
+            cursor: pointer;
+        }
+
+        .header__open-button .material-symbols-outlined {
+            font-size: 32px;
+        }
+
+        .header__nav-links .material-symbols-outlined {
+            font-size: 12px;
+        }
+
+        .recom .material-symbols-outlined {
+            font-size: 20px;
+        }
+
+        .search__item__icon-container .material-symbols-outlined {
+            font-size: 42px;
+            color: rgb(61, 139, 92);
+        }
+    </style>
+
 </head>
 
 <body>
     <header class="header">
         <input type="checkbox" class="header__checkbox" id="open">
-        <label for="open" class="header__open-button">
-            <span class="material-symbols-outlined">Home</span>
-        </label>
+        <div class="header__open-button__container">
+            <label for="open" class="header__open-button">
+                <span class="material-symbols-outlined">Menu</span>
+            </label>
+        </div>
         <div class="header__img-container">
-            <img src="#" alt="Logo de PCE Financiera" class="header__img">
+            <img src="/PCE-Financiera Resources/PCE-Financiera.png" alt="Logo de PCE Financiera" class="header__img">
         </div>
         <nav class="header__nav-links">
             <ul class="header__nav-links__list">
                 <li class="header__nav-links__list__item">
-                    <a href="#" class="header__nav-links__list__item__link">LINK</a>
+                    <a href="#" class="header__nav-links__list__item__link">Cuentas e Inversión</a>
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
                 </li>
                 <li class="header__nav-links__list__item">
-                    <a href="#" class="header__nav-links__list__item__link">LINK</a>
+                    <a href="#" class="header__nav-links__list__item__link">Tarjetas</a>
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
                 </li>
                 <li class="header__nav-links__list__item">
-                    <a href="#" class="header__nav-links__list__item__link">LINK</a>
+                    <a href="#" class="header__nav-links__list__item__link">Préstamos</a>
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
                 </li>
                 <li class="header__nav-links__list__item">
-                    <a href="#" class="header__nav-links__list__item__link">LINK</a>
+                    <a href="#" class="header__nav-links__list__item__link">Seguros</a>
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
                 </li>
                 <li class="header__nav-links__list__item">
-                    <a href="#" class="header__nav-links__list__item__link">LINK</a>
+                    <a href="#" class="header__nav-links__list__item__link">Remesas</a>
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
                 </li>
                 <li class="header__nav-links__list__item">
-                    <a href="#" class="header__nav-links__list__item__link">LINK</a>
+                    <a href="#" class="header__nav-links__list__item__link">Más</a>
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
                 </li>
             </ul>
         </nav>
@@ -57,19 +90,20 @@
             <article class="slider__content">
                 <ul class="slider__list">
                     <li class="slider__list__item">
-                        <img src="#" alt="Imagen del slider principal" class="slider__list__item__img">
+                        <img src="https://images.pexels.com/photos/1602726/pexels-photo-1602726.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Imagen del slider principal" class="slider__list__item__img">
                     </li>
                     <li class="slider__list__item">
-                        <img src="#" alt="Imagen del slider principal" class="slider__list__item__img">
+                        <img src="https://images.pexels.com/photos/4968639/pexels-photo-4968639.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Imagen del slider principal" class="slider__list__item__img">
                     </li>
                     <li class="slider__list__item">
-                        <img src="#" alt="Imagen del slider principal" class="slider__list__item__img">
+                        <img src="https://images.pexels.com/photos/3944405/pexels-photo-3944405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Imagen del slider principal" class="slider__list__item__img">
                     </li>
                     <li class="slider__list__item">
-                        <img src="#" alt="Imagen del slider principal" class="slider__list__item__img">
-                    </li>
-                    <li class="slider__list__item">
-                        <img src="#" alt="Imagen del slider principal" class="slider__list__item__img">
+                        <img src="https://images.pexels.com/photos/1398431/pexels-photo-1398431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Imagen del slider principal" class="slider__list__item__img">
                     </li>
                 </ul>
             </article>
@@ -77,49 +111,185 @@
 
         <section class="search">
             <article class="search__content">
-                <div class="search__item">
-                    <h2>Objeto</h2>
+                <div class="search__search-box-container">
+                    <input type="text" placeholder="¿Qué estás buscando?" class="search__search-box">
                 </div>
-                <div class="search__item">
-                    <h2>Objeto</h2>
-                </div>
-                <div class="search__item">
-                    <h2>Objeto</h2>
-                </div>
-                <div class="search__item">
-                    <h2>Objeto</h2>
-                </div>
-                <div class="search__item">
-                    <h2>Objeto</h2>
-                </div>
-                <div class="search__item">
-                    <h2>Objeto</h2>
-                </div>
+                <a class="search__item" href="#">
+                    <div class="search__item__icon-container">
+                        <span class="material-symbols-outlined" aria-hidden="true">live_tv</span>
+                    </div>
+                    <h2 class="search__item__name">Canales de Contacto</h2>
+                </a>
+                <a class="search__item" href="#">
+                    <div class="search__item__icon-container">
+                        <span class="material-symbols-outlined" aria-hidden="true">payments</span>
+                    </div>
+                    <h2 class="search__item__name">Remesas</h2>
+                </a>
+                <a class="search__item" href="#">
+                    <div class="search__item__icon-container">
+                        <span class="material-symbols-outlined" aria-hidden="true">calculate</span>
+                    </div>
+                    <h2 class="search__item__name">Calculadoras</h2>
+                </a>
+                <a class="search__item" href="#">
+                    <div class="search__item__icon-container">
+                        <span class="material-symbols-outlined" aria-hidden="true">campaign</span>
+                    </div>
+                    <h2 class="search__item__name">Sala de Prensa</h2>
+                </a>
+                <a class="search__item" href="#">
+                    <div class="search__item__icon-container">
+                        <span class="material-symbols-outlined" aria-hidden="true">rss_feed</span>
+                    </div>
+                    <h2 class="search__item__name">PCE Podcast</h2>
+                    </div>
+                    <a class="search__item" href="#">
+                        <div class="search__item__icon-container">
+                            <span class="material-symbols-outlined" aria-hidden="true">sell</span>
+                        </div>
+                        <h2 class="search__item__name">PCE Plus</h2>
+                    </a>
             </article>
         </section>
+        <aside class="aside">
+            <section class="recom">
+                <h2 class="recom__title">
+                    <span class="material-symbols-outlined">for_you</span>
+                    Recomendados para Ti
+                </h2>
+                <article class="recom__content">
 
-        <section class="recom">
-            <h2 class="recom__title">Recomendados</h2>
-            <article class="recom__content">
-                <div class="recom__item"></div>
-                <div class="recom__item"></div>
-                <div class="recom__item"></div>
-                <div class="recom__item"></div>
-                <div class="recom__item"></div>
-            </article>
-        </section>
+                    <div class="recom__item">
+                        <div class="recom__item__text-container">
+                            <h3 class="recom__item__title">Título de alguna recomendación</h3>
+                            <p class="recom__item__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                        </div>
+                        <div class="recom__item__icon-container">
+                            <span class="material-symbols-outlined">Arrow_forward_ios</span>
+                        </div>
+                    </div>
+                    <div class="recom__item">
+                        <div class="recom__item__text-container">
+                            <h3 class="recom__item__title">Título de alguna recomendación</h3>
+                            <p class="recom__item__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                        </div>
+                        <div class="recom__item__icon-container">
+                            <span class="material-symbols-outlined">Arrow_forward_ios</span>
+                        </div>
+                    </div>
+                    <div class="recom__item">
+                        <div class="recom__item__text-container">
+                            <h3 class="recom__item__title">Título de alguna recomendación</h3>
+                            <p class="recom__item__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                        </div>
+                        <div class="recom__item__icon-container">
+                            <span class="material-symbols-outlined">Arrow_forward_ios</span>
+                        </div>
+                    </div>
+                    <div class="recom__item">
+                        <div class="recom__item__text-container">
+                            <h3 class="recom__item__title">Título de alguna recomendación</h3>
+                            <p class="recom__item__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                        </div>
+                        <div class="recom__item__icon-container">
+                            <span class="material-symbols-outlined">Arrow_forward_ios</span>
+                        </div>
+                    </div>
+                    <div class="recom__item">
+                        <div class="recom__item__text-container">
+                            <h3 class="recom__item__title">Título de alguna recomendación</h3>
+                            <p class="recom__item__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="recom__item__icon-container">
+                            <span class="material-symbols-outlined">Arrow_forward_ios</span>
+                        </div>
+                    </div>
+                    <div class="recom__item">
+                        <div class="recom__item__text-container">
+                            <h3 class="recom__item__title">Título de alguna recomendación</h3>
+                            <p class="recom__item__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            </p>
+                        </div>
+                        <div class="recom__item__icon-container">
+                            <span class="material-symbols-outlined">Arrow_forward_ios</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
 
-        <section class="news">
-            <h2 class="news__title">Noticias</h2>
-            <article class="news__content">
-                <div class="news__item"></div>
-                <div class="news__item"></div>
-            </article>
-        </section>
+            <section class="news">
+                <h2 class="news__title">
+                    <span class="material-symbols-outlined">web_stories</span>
+                    Noticias Recientes
+                </h2>
+                <article class="news__content">
+                    <div class="news__item">
+                        <div class="news__item__img-container">
+                            <img src="https://images.pexels.com/photos/776656/pexels-photo-776656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="" class="news__item__img">
+                        </div>
+                        <div class="news__item__text-container">
+                            <h3 class="news__item__title">Titulo aleatorio</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item__img-container">
+                            <img src="https://images.pexels.com/photos/776656/pexels-photo-776656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="" class="news__item__img">
+                        </div>
+                        <div class="news__item__text-container">
+                            <h3 class="news__item__title">Titulo aleatorio</h3>
+                            <p class="news__item__text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                     <div class="news__item">
+                        <div class="news__item__img-container">
+                            <img src="https://images.pexels.com/photos/776656/pexels-photo-776656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="" class="news__item__img">
+                        </div>
+                        <div class="news__item__text-container">
+                            <h3 class="news__item__title">Titulo aleatorio</h3>
+                            <p class="news__item__text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                     <div class="news__item">
+                        <div class="news__item__img-container">
+                            <img src="https://images.pexels.com/photos/776656/pexels-photo-776656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="" class="news__item__img">
+                        </div>
+                        <div class="news__item__text-container">
+                            <h3 class="news__item__title">Titulo aleatorio</h3>
+                            <p class="news__item__text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </aside>
     </main>
-
+    <hr>
     <footer class="footer">
-        Copyright - 2025
+        Copyright - 2025 PCE Financiera
     </footer>
 </body>
 
